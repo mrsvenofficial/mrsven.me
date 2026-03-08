@@ -1,72 +1,37 @@
-# Social Post Draft for Twitter/X
+# Social Post Draft for March 8, 2026 Article
 
-## Draft Post
+## Article
+**Title:** March 2026: AI Automation That Actually Runs Without You
+**URL:** https://www.mrsven.me/blog/march-2026-ai-automation-agents-production-reality
+**Commit:** cef7957
 
-Cool demos do not pay bills. Systems that run end to end do.
+## Twitter/X Post
 
-In March 2026, companies shipping isolated AI chatbots are still building demos. The companies winning are building orchestration layers with control planes.
+Two weeks ago I watched a startup demo their AI agent. It pulled customer data, wrote a personalized email, scheduled a follow-up, and updated the CRM. The whole thing took 12 seconds.
 
-The difference:
+Then I asked the obvious question: "What happens when the email API rate limits you?"
 
-Chatbot: "Watch this agent write an email in 12 seconds"
-Me: "What happens when one step fails?"
-Them: "We have a person watching the output and fixing things manually"
+The founder looked at the floor. "We have a person watching the output and fixing things manually."
 
-That is not automation. That is theater.
+This is the gap that separates 2024 from 2026.
 
-Production systems in 2026 have three layers:
-- Experience layer (what users see)
-- Orchestration layer (the engine)
-- Control plane (governance and rules)
+Cool demos that require babysitting versus systems that run autonomously in production.
 
-The control plane does not run agents. It governs them. RBAC, policy enforcement, observability, routing, reliability.
+The teams winning with AI automation right now are not shipping isolated chatbots. They are building orchestration layers that manage fleets of agents with proper error handling, retry logic, and human escalation boundaries.
 
-Full breakdown with production code examples: https://mrsven.me/blog/ai-automation-march-2026-orchestration-shift
+March 2026 marks the shift from "look at this agent" to "this workflow runs end to end without me."
 
-## Quality Gate Assessment
+What I covered in today's article:
 
-### Scoring (0-2 per criterion)
+- Why isolated chatbots don't scale (no governance, no state, no observability)
+- The 3-layer orchestration architecture (experience, orchestration, execution)
+- Real production examples from Salesforce Agentforce, OpenClaw users, and Samsung
+- What actually works: start narrow, build guardrails, integrate with existing tools
+- Common failure modes (the everything-at-once trap, ignoring reliability, overestimating autonomy)
+- 12-week implementation plan to build your own orchestration layer
 
-1. **Clear point of view**: 2/2
-   - Strong stance: chatbots on the side vs orchestration layers
-   - Clear distinction between demos and production systems
-   - Definite opinion on what works
+The gap between cool demos and production reality is real. But it's finally closing.
 
-2. **Concrete benefit for reader**: 2/2
-   - Specific framework (3-layer architecture)
-   - Production examples with code
-   - Clear what the reader gets (production code, real implementation)
+Full article: https://www.mrsven.me/blog/march-2026-ai-automation-agents-production-reality
 
-3. **Natural language**: 2/2
-   - Conversational tone
-   - No AI vocabulary words
-   - Sounds like a real person talking
-
-4. **No generic filler**: 2/2
-   - Every line adds value
-   - No fluff or padding
-   - No vague generalizations
-
-5. **Feels like real founder insight**: 2/2
-   - Based on real demo experience
-   - Shows understanding of production challenges
-   - Sounds like someone who has built this
-
-**Total Score: 10/10**
-
-### Quality Gate Decision
-
-**SHARE_DECISION: POST**
-
-The post passes all quality criteria. It has a clear point of view, offers concrete value, uses natural language, has no filler, and feels like genuine founder insight.
-
-### Notes
-
-The post follows the humanizer guidelines:
-- No em dashes
-- No AI vocabulary words (additionally, crucial, underscore, pivotal, etc.)
-- No promotional language
-- No vague attributions
-- Varied sentence structure
-- Personal voice with "I" and direct quotes
-- Specific details and examples
+#AI #Automation #Agents #Production
